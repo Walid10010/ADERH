@@ -13,7 +13,7 @@ from pyod.models.ocsvm import OCSVM
 
 from sklearn.cluster import DBSCAN
 from deepod.models.tabular import RDP, RCA
-from ARDEH import ADERH
+from ADERH import ADERH
 from sklearn.metrics import roc_auc_score, average_precision_score
 import glob
 from sklearn.model_selection import StratifiedShuffleSplit
@@ -29,7 +29,7 @@ sss = StratifiedShuffleSplit(n_splits=3, test_size=0.3, random_state=0 )
 # algo_dic ={'ADERH_norm':ADERH}
 random_seeds = [0, 1, 2, 1000, 10000]
 
-for li in [glob.glob('Classical/*')]:
+for li in [glob.glob('data/Classical/*')]:
  for data_name in li:
 
     #if '9_c' in data_name:continue
@@ -49,7 +49,7 @@ for li in [glob.glob('Classical/*')]:
         ap_score_value = 0
         from  sklearn.preprocessing import MinMaxScaler
         X = MinMaxScaler().fit_transform(X)
-        #if X.shape[0] > 20000 or X.shape[0] < 1000:continue
+        if X.shape[0] > 20000 :continue
         if algo_name in (['ADERH', 'INNE', 'IForest', 'DIF']):
             for seed in random_seeds:
              for i, (train_index, test_index) in enumerate(sss.split(X, Y)):
@@ -95,13 +95,10 @@ for li in [glob.glob('Classical/*')]:
              ap_score_value += average_precision_score(Y[test_index], outlier_score) / 3
 
 
-             # print('dataset:{}, algo: {}, roc-score: {} '.format(data_name.split('/')[-1].split('.')[0], algo_name,   roc_score_value))
         print('dataset:{}, algo: {}, roc-score: {:.3f}, ap-score: {:.3f}'.format(data_name.split('/')[-1].split('.')[0], algo_name,   roc_score_value, ap_score_value))
-        with open('kdd2025_all_repeat.csv'.format(algo_name), 'a') as file:
+        with open('neurips_all_repeat.csv'.format(algo_name), 'a') as file:
             file.write(('dataset:{}, algo: {}, roc-score: {:.3f}, ap-score: {:.3f}'.format(data_name.split('/')[-1].split('.')[0], algo_name,   roc_score_value, ap_score_value)) + '\n')
-        #     file.write('ROC: {:.3f}'.format(roc_score_value) + '\n')
-        #     file.write('AP: {:.3f}'.format(ap_score_value) + '\n')
-        #     file.write('F1: {:.3f}'.format(0) + '\n')
+
 
 
 
