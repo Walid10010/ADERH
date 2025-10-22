@@ -2,6 +2,14 @@
 
 **Paperpage:** https://neurips.cc/virtual/2025/poster/115418
 
+##  Introduction
+
+*ADERH** is a **multi-scale**, **fast**, and **hyperparameter-robust** anomaly detection method that isolates anomalies using **compact hyperspheres** built from random point pairs.  
+Guided by the **δ-separation principle**, ADERH minimizes overlap with anomalies by halving pairwise distances to form small, adaptive hyperspheres that collectively cover diverse normal regions.  
+Each hypersphere’s isolation signal is refined using **Pitch** — a boundary proximity ratio — and **NDensity** — a sparsity-aware density weight.  
+By ensemble-averaging these local isolation signals, ADERH achieves **stable and precise anomaly detection** across heterogeneous data.
+
+
 
 ##  Environment Setup
 
