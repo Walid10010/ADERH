@@ -96,7 +96,7 @@ for li in [glob.glob('data/Classical/*')]:
 
 
         print('dataset:{}, algo: {}, roc-score: {:.3f}, ap-score: {:.3f}'.format(data_name.split('/')[-1].split('.')[0], algo_name,   roc_score_value, ap_score_value))
-        with open('neurips_all_repeat.csv'.format(algo_name), 'a') as file:
+        with open('results.csv'.format(algo_name), 'a') as file:
             file.write(('dataset:{}, algo: {}, roc-score: {:.3f}, ap-score: {:.3f}'.format(data_name.split('/')[-1].split('.')[0], algo_name,   roc_score_value, ap_score_value)) + '\n')
 
 

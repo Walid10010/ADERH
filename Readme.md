@@ -66,7 +66,7 @@ python run_experiment.py
 * **Splits:** 3 stratified (70/30)
 * **Seeds:** 0, 1, 2, 100, 1000 (for stochastic methods)
 * **Metrics:** AUC-ROC and AUC-PR (averaged over splits and seeds)
-* **Output:** results appended to `kdd2025_all_repeat.csv`
+* **Output:** results appended to `results.csv`
 
 
 
