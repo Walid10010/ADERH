@@ -63,7 +63,7 @@ python run_experiment.py
 * Performs **3 stratified 70/30 train-test splits** (`StratifiedShuffleSplit`).
 * Uses **random seeds = [0, 1, 2, 100, 1000]** for stochastic algorithms.
 * Computes **AUC-ROC** and **Average Precision (AUC-PR)**.
-* Results are printed to console and appended to **`kdd2025_all_repeat.csv`**.
+* Results are printed to console and appended to **`result.csv`**.
 
 
 
