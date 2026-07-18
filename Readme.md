@@ -77,4 +77,17 @@ python run_experiment.py
 * **Output:** results appended to `results.csv`
 
 
+markdown## Citation
 
+If you find this work useful, please cite:
+
+```bibtex
+@inproceedings{durani2025aderh,
+  title     = {Anomaly Detection by an Ensemble of Random Pairs of Hyperspheres},
+  author    = {Durani, Walid and Leiber, Collin and Durani, Khalid and Plant, Claudia and B\"{o}hm, Christian},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {38},
+  year      = {2025},
+  publisher = {Curran Associates, Inc.},
+  url       = {https://openreview.net/forum?id=vM4PIjsJDG}
+}
