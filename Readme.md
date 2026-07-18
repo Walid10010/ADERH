@@ -77,7 +77,7 @@ python run_experiment.py
 * **Output:** results appended to `results.csv`
 
 
-markdown## Citation
+## Citation
 
 If you find this work useful, please cite:
 
