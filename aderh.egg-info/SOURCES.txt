@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+aderh/__init__.py
+aderh/_aderh.py
+aderh.egg-info/PKG-INFO
+aderh.egg-info/SOURCES.txt
+aderh.egg-info/dependency_links.txt
+aderh.egg-info/requires.txt
+aderh.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_equivalence.py

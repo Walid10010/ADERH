@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aderh"
+version = "1.0.0"
+description = "ADERH: Anomaly Detection by an Ensemble of Random Pairs of Hyperspheres (NeurIPS 2025)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Walid Durani", email = "durani@dbs.ifi.lmu.de"}]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scikit-learn>=1.1"]
+keywords = ["anomaly-detection", "outlier-detection", "unsupervised-learning", "isolation", "ensemble"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/Walid10010/ADERH"
+Paper = "https://neurips.cc/virtual/2025/poster/115418"
+
+[tool.setuptools]
+packages = ["aderh"]

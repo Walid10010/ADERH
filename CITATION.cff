@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use ADERH, please cite the NeurIPS 2025 paper."
+title: "ADERH: Anomaly Detection by an Ensemble of Random Pairs of Hyperspheres"
+authors:
+  - family-names: Durani
+    given-names: Walid
+  - family-names: Leiber
+    given-names: Collin
+  - family-names: Durani
+    given-names: Khalid
+  - family-names: Plant
+    given-names: Claudia
+  - family-names: "Böhm"
+    given-names: Christian
+preferred-citation:
+  type: conference-paper
+  title: "Anomaly Detection by an Ensemble of Random Pairs of Hyperspheres"
+  collection-title: "Advances in Neural Information Processing Systems 38 (NeurIPS 2025)"
+  year: 2025
+  authors:
+    - family-names: Durani
+      given-names: Walid
+    - family-names: Leiber
+      given-names: Collin
+    - family-names: Durani
+      given-names: Khalid
+    - family-names: Plant
+      given-names: Claudia
+    - family-names: "Böhm"
+      given-names: Christian
